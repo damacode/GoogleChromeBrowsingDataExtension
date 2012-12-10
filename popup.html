@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Remove Browsing Data Popup</title>
+<link href="popup.css" rel="stylesheet">
+<script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+	<h1>Remove Browsing Data</h1>
+	<div id="form">
+  		<table>    
+        <tr>
+      		<td width="200" align="left" valign="top">
+		        <label><input type="checkbox" name="data" value="appcache" id="appcache">Application Cache</label>
+		        <br>
+        		<label><input type="checkbox" name="data_" value="cache" id="cache">Cache</label>
+		        <br>
+        		<label><input type="checkbox" name="data_" value="cookies" id="cookies">Cookies</label>
+        		<br>
+		        <label><input type="checkbox" name="data_" value="downloads" id="downloads">Downloads</label>
+		        <br>
+        		<label><input type="checkbox" name="data_" value="fileSystems" id="fileSystems">File System</label>
+			</td>
+      		<td width="200" align="left" valign="top">
+            	<label><input type="checkbox" name="data_" value="formData" id="formData">Form Data</label>
+        		<br>
+        		<label><input type="checkbox" name="data_" value="history" id="history">History</label>
+        		<br>
+        		<label><input type="checkbox" name="data_" value="indexedDB" id="indexedDB">Indexed DB</label>
+        		<br>
+        		<label><input type="checkbox" name="data_" value="localStorage" id="localStorage">Local Storage</label>
+        		<br>
+        		<label><input type="checkbox" name="data_" value="serverBoundCertificates" id="serverBoundCertificates">Server Certificates</label>
+          	</td>
+     		<td width="200" align="left" valign="top">
+     			<label><input type="checkbox" name="data_" value="pluginData" id="pluginData">Plugin Data</label>
+		        <br>
+        		<label><input type="checkbox" name="data_" value="passwords" id="passwords">Passwords</label>
+        		<br>
+        		<label><input type="checkbox" name="data_" value="webSQL" id="webSQL">Web SQL</label>
+        		<br>
+			</td>
+            </tr>
+		</table>
+		<table>    
+        <tr>
+	    	<td>
+            	<label>Remove browsing data from last </label>
+		        <input id ="time" type="text" value="0" size="3" maxlength="3">
+        		<select id="timeframe">
+			    	<option value="minute">minutes</option>
+			        <option value="hour">hours</option>
+			        <option value="day" selected>days</option>
+			        <option value="week">weeks</option>
+			        <option value="year">years</option>
+			        <option value="forever">forever</option>
+		        </select>
+			</td>
+            </tr>
+		</table>
+		<table>	
+        <tr>
+      		<td>
+            	<button id="save">Save Options</button>
+            </td>
+            </tr>
+		</table>
+		<table>    
+        <tr>
+	    	<td>
+            	<button id="button">Remove</button>
+            </td>
+            </tr>
+		</table>
+	</div>
+</body>
+</html>
